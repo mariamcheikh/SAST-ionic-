@@ -1,0 +1,66 @@
+
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>اتصل بنا</ion-title>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+  
+    </ion-navbar>
+  
+  </ion-header>
+  <ion-content padding class="getstart">
+
+      <ion-list inset class="transparentinput">
+
+          <ion-item class="transparentinput">
+     
+            <ion-label dir="rtl" color="light" style="font-weight:bold;" color="light" stacked>الاسم بالكامل * </ion-label>
+            <ion-input type="text" [(ngModel)]="name" placeholder="الاسم بالكامل" style="font-weight:bold;" color="light" dir="rtl" required></ion-input>
+          </ion-item>
+        
+          <ion-item class="transparentinput">
+           
+            <ion-label dir="rtl" color="primary" style="font-weight:bold;" color="light" stacked>البريد الإلكتروني* </ion-label>
+            <ion-input  [(ngModel)]="to" type="email" placeholder="البريد الإلكتروني*" style="font-weight:bold;" color="light" dir="rtl" required></ion-input>
+
+          </ion-item >
+
+          <ion-item class="transparentinput">
+
+              <ion-label dir="rtl" color="primary" style="font-weight:bold;" color="light" stacked> الهاتف* </ion-label>
+            <ion-input type="phone" [(ngModel)]="phone" placeholder=" الهاتف*" style="font-weight:bold;" color="light" dir="rtl" required></ion-input>
+
+            </ion-item>
+
+            <ion-item class="transparentinput">
+
+                <ion-label dir="rtl" color="primary" style="font-weight:bold;" color="light" stacked> الموضوع* </ion-label>
+                <ion-input [(ngModel)]="subject" type="text" placeholder=" الموضوع*" dir="rtl" style="font-weight:bold;" color="light" required></ion-input>
+           </ion-item>
+
+
+
+
+              <ion-item class="transparentinput" >
+
+                  <ion-label dir="rtl"  style="font-weight:bold;" color="light" stacked> رسالتك* </ion-label>
+                  <ion-textarea [(ngModel)]="body" type="textarea" placeholder=" رسالتك*"  style="font-weight:bold;" color="light" dir="rtl" required ></ion-textarea>
+
+                </ion-item>
+
+
+                
+                <ion-item class="transparentinput" >
+                  <button ion-button  round block  class="mybutton"  (click)="send()"   item-end>أرسل</button>
+                  </ion-item>
+        </ion-list>
+
+
+    </ion-content>
+    
+   
+
+
+

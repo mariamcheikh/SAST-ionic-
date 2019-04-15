@@ -1,0 +1,54 @@
+ <ion-header>
+
+  <ion-navbar>
+    <ion-title>دخول</ion-title>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="getstart" >
+
+    <ion-list inset class="transparentinput">
+
+        <ion-item class="transparentinput">
+          <ion-label   dir="rtl"  color="light" stacked>اسم المستخدم او البريد الإلكتروني او رقم الجوال * </ion-label>
+          <ion-input type="text"  dir="rtl" placeholder=" اسم المستخدم او البريد الإلكتروني او رقم الجوال" required  [(ngModel)]="userData.username"></ion-input>
+        </ion-item>
+      
+        <ion-item  class="transparentinput">
+         <ion-label   dir="rtl" color="light" stacked>كلمة المرور* </ion-label>
+          <ion-input  dir="rtl" type="password" placeholder="كلمة المرور*" required [(ngModel)]="userData.password" ></ion-input>
+        </ion-item>
+         <ion-item class="transparentinput">
+                <ion-label  dir="rtl">تذكرني</ion-label>
+                <ion-checkbox color="light" dir="rtl" ></ion-checkbox>
+              </ion-item>
+    
+        <!-- <a button  dir="rtl" class="a" href="forgotemail()" (click)="forgotemail()"  color="light" > هل نسيت كلمة العبور؟</a>-->
+       
+              <button ion-button  round block  dir="rtl"  (click)="login()" class="mybutton"> دخول </button>
+              <button ion-button  round block  dir="rtl"  (click)="loginWithFB()" class="mybutton"> دخول عبر فيسبوك</button>
+              <button ion-button round block   dir="rtl" href  (click)="forgotemail()" class="mybutton"> هل نسيت كلمة العبور؟</button>
+              
+              <!-- <ion-card *ngIf="userData">
+                <ion-card-header>{{ userData.username }}</ion-card-header>
+                <img [src]="userData.picture" />
+                <ion-card-content>
+                  <p>Email: {{ userData.email }}</p>
+                  <p>First Name: {{ userData.first_name }}</p>
+                </ion-card-content>
+              </ion-card> -->
+             
+            </ion-list>
+
+</ion-content>
+
+
+
+
+
+
+ 

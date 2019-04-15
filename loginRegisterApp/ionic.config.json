@@ -1,0 +1,8 @@
+{
+  "name": "loginRegisterApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+
+}

@@ -1,0 +1,24 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>حسابي </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  class="getstart">
+
+
+  <h1 dir="rtl" > مرحباً بك في حسابك</h1>
+  <ion-card dir="rtl" *ngIf="userData" >
+    <ion-card-header dir="rtl">{{ userData.username }}</ion-card-header>
+    <img dir="rtl" [src]="userData.picture" />
+    <ion-card-content dir="rtl" >
+      <p>Email: {{ userData.email }}</p>
+      <p>First Name: {{ userData.first_name }}</p>
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>

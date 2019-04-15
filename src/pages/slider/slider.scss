@@ -1,0 +1,30 @@
+page-slider {
+
+    .swiper-pagination-bullet-active{
+        background:white
+    }
+
+
+    .buttom{
+   // position:relative;
+    position:absolute;
+    bottom:0;
+    right:0;
+    //margin-right:10%;
+    margin-bottom: 20%;
+    color: white;
+    background: yellow;
+    
+    }
+    .image{
+            background-size: cover;
+    }
+
+    .getstart {
+        background-image: url('../assets/imgs/bg3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+          }
+
+          
+}

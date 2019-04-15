@@ -1,0 +1,38 @@
+page-home {
+
+
+    .getstart {
+
+        background-image: url('../assets/imgs/bg3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0.0);
+        color: white;
+          }
+
+
+    .myphoto {
+        ion-content img {
+            vertical-align: middle;
+            align-items: center;
+            margin-right: 30%;
+            background-image: url('./assets/imgs/bg1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        }
+
+        .mybutton{
+            background: yellow;
+            color: black;
+            align-content: center;
+            //margin-left: 35%;
+            
+        }
+        .alligncontent{
+            vertical-align: middle;
+        }
+
+          
+}

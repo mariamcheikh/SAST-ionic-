@@ -1,0 +1,19 @@
+
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>حسابي </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+<ion-content padding class="getstart">
+    <h1 dir="rtl" > مرحباً بك في حسابك</h1>
+     <h2 dir="rtl" >مرحباً {{userDetails.name}}</h2>
+     <h3 dir="rtl" >البريد الكتروني: {{userDetails.email}}</h3>
+     <h3 dir="rtl" >اسم المستخدم: {{userDetails.username}}</h3>
+
+     <button ion-button round block  dir="rtl"  class="mybutton" (click)="logout()">خروج</button>
+   </ion-content>

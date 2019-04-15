@@ -1,0 +1,7 @@
+{
+  "name": "Swedish-academy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
